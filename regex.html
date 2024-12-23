@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.1-dist/css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="/bootstrap-5.3.1-dist/js/bootstrap.js" /> -->
+  </head>
+  <body>
+    <div class="text-center">
+      <form
+        action="/myPexels.html"
+        class="col-5 text-center p-3 mx-auto border border-primary"
+      >
+        <div class="text-center">
+          <label for="">Full Name</label>
+          <input id="fullName" class="form-control" type="text" />
+        </div>
+        <div class="text-center mx-auto">
+          <label for="">Age</label>
+          <input id="age" class="form-control" type="number" />
+        </div>
+        <div class="text-center">
+          <label for="">Email</label>
+          <div id="failed">
+            <input id="userEmail" class="form-control" type="email" />
+          </div>
+        </div>
+        <div id="emailWarning">
+          <p class="text-danger">Email must be a valid email</p>
+        </div>
+        <div class="text-center">
+          <label for="">Password</label>
+          <input id="userPassword" class="form-control" type="password" />
+        </div>
+        <div id="passWarnig">
+          <p id="passWarning" class="text-danger">
+            Password must have a small letter, a capital letter, a special char,
+            a number and must be 8 characters long
+          </p>
+        </div>
+        <div class="text-center">
+          <label for="">Confirm Password</label>
+          <input id="confirm" class="form-control" type="password" />
+        </div>
+        <div id="match"><p class="text-danger">Password must match</p></div>
+      </form>
+      <button
+        value="Submit"
+        class="btn btn-outline-primary form-control mt-3 mb-3"
+        type=""
+        onclick="checkRegex()"
+      >
+        Submit
+      </button>
+    </div>
+
+    <script src="/regex.js"></script>
+  </body>
+</html>
